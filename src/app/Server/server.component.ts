@@ -8,4 +8,11 @@ import { Component } from "@angular/core";
 })
 export class ServerComponent{
 
+  serverid: number = 10;
+  serverstatus: string = "server is offline";
+
+  getServerStatus(){
+    return this.serverstatus;
+  }
+
 }
