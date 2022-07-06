@@ -10,7 +10,7 @@ export class ServerComponent{
 
   serverid: number = 10;
   serverstatus: string = "server is offline";
-  serverName ='';
+  serverName ='test server';
 
   allowNewServer = false;
 

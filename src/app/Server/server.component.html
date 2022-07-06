@@ -5,6 +5,8 @@
 <hr>
 <label for="">Server Name</label>
 <input type="text" class="form-control" (input)="onServerUpdate($event)">
+<hr>
+<input type="text" class="form-control" [(ngModel)]="serverName">
 
 <p>{{serverName}}</p>
 
