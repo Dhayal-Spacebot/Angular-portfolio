@@ -2,6 +2,7 @@
 
 <p>{{'Server'}} with the id {{serverid}} status as follows {{serverstatus}}, we can get the result from a method too {{getServerStatus()}} </p>
 
-<button class="btn btn-primary" [disabled] = "!allowNewServer">Add server</button>
+<button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="onServerCreation()">Add server</button>
+<p>{{serverCreationStatus}}</p>
 
 
