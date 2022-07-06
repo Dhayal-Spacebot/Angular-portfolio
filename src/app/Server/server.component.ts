@@ -10,6 +10,7 @@ export class ServerComponent{
 
   serverid: number = 10;
   serverstatus: string = "server is offline";
+  serverName ='';
 
   allowNewServer = false;
 
@@ -29,6 +30,13 @@ export class ServerComponent{
 
   onServerCreation(){
     this.serverCreationStatus = "New server is created!! ";
+  }
+
+  onServerUpdate(output : Event){
+
+    this.serverName =(<HTMLInputElement>output.target).value;
+
+
   }
 
 
