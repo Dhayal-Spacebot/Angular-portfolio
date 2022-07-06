@@ -13,6 +13,8 @@ export class ServerComponent{
 
   allowNewServer = false;
 
+  serverCreationStatus: string = "No server is created yet!!";
+
   getServerStatus(){
     return this.serverstatus;
   }
@@ -24,5 +26,11 @@ export class ServerComponent{
 
     }, 3000);
   }
+
+  onServerCreation(){
+    this.serverCreationStatus = "New server is created!! ";
+  }
+
+
 
 }
