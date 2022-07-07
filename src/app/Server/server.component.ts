@@ -12,6 +12,8 @@ export class ServerComponent{
   serverstatus: string = "server is offline";
   serverName ='test server';
 
+  serverCreated = false;
+
   allowNewServer = false;
 
   serverCreationStatus: string = "No server is created yet!!";
@@ -29,7 +31,8 @@ export class ServerComponent{
   }
 
   onServerCreation(){
-    this.serverCreationStatus = "New server is created!! ";
+    this.serverCreated = true;
+    // this.serverCreationStatus = "New server is created!, Server Name is : "+ this.serverName;
   }
 
   onServerUpdate(output : Event){
